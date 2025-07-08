@@ -176,6 +176,19 @@
     </div>
     <!-- End Video -->
     <!-- ==================== -->
+    <!-- Start Quotes -->
+    <div class="quote">
+        <div class="container">
+            <p>
+                <i class="fa-solid fa-quote-left"></i>
+                Your hair tells your story
+                <i class="fa-solid fa-quote-right"></i>
+            </p>
+            <span>- Soin Salon</span>
+        </div>
+    </div>
+    <!-- End Quotes -->
+    <!-- ==================== -->
     <!-- Start About -->
     <div class="about" id="about">
         <h2 class="special-heading">About Us</h2>
@@ -231,3 +244,21 @@
 </body>
 
 </html>
+
+<!-- Scripts -->
+<!-- Under testing -->
+<script>
+    function revealOnScroll() {
+        const containers = document.querySelectorAll('.best-stylists .image-container');
+        containers.forEach(container => {
+            const rect = container.getBoundingClientRect();
+            const isVisible = rect.top < window.innerHeight - 100;
+            if (isVisible) {
+                container.classList.add('show-caption');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+</script>

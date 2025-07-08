@@ -463,6 +463,34 @@ body {
 }
 
 /* End Video Section */
+/* Start Quotes Section */
+.quote {
+    padding: 40px 0;
+    background-color: black;
+    text-align: center;
+    color: white;
+    /* background-image: url(../image/Background2.png);
+    background-size: cover; */
+    position: relative;
+}
+
+.quote p {
+    font-size: 24px;
+    font-style: italic;
+    color: white;
+}
+
+.quote p i {
+    font-size: 20px;
+    color: var(--mail-color);
+}
+
+.quote span {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    color: var(--mail-color);
+}
 
 /* Start About Section */
 .about {
