@@ -83,6 +83,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 160px;
+}
+
+@media (max-width: 767px) {
+    .header .container {
+        margin-left: -30px;
+    }
+    
 }
 
 .header .logo {
@@ -494,7 +502,7 @@ body {
 
 /* Start About Section */
 .about {
-    padding: 60px 0;
+    padding: 30px 0;
     background-color: black;
     text-align: center;
 }
@@ -530,8 +538,8 @@ body {
 /* End About Section */
 /* Start Contact Section */
 .contact {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: black;
 }
 
@@ -544,6 +552,7 @@ body {
 .contact .contact-info h2 {
     font-size: 50px;
     color: var(--mail-color);
+    margin: 30px 0;
 }
 
 .contact .contact-info p {
@@ -585,6 +594,21 @@ body {
 
 .contact .contact-info .social i:hover {
     color: var(--mail-color);
+}
+
+@media (max-width: 767px) {
+    .contact .map-container {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .map-container iframe {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        border: 0;
+    }
 }
 
 /* Start Footer */
